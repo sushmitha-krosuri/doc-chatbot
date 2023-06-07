@@ -1,0 +1,105 @@
+<!-- <div class="cont3"> -->
+    <!-- <div class="left_panel">
+        <div *ngIf="isExcel">
+           <app-display-excel></app-display-excel>
+       </div>
+       
+       <div *ngIf="isPdf">
+           <app-display-pdf></app-display-pdf>
+       </div> 
+       </div>  -->
+   
+
+    <div class="browse-cont ">
+        <button (click)="uploadfile()" class="uploadbtn"><i class="bi bi-cloud-upload upload"></i></button>
+        <span class="browseFile">
+            <i class="bi bi-folder-plus folder"></i>
+        <input type="file" id="file1" class="hide-choose-file-button text-secondary" (change)="getFile($event)"/>
+        <button class="pop-button" (click)="openDialog()">
+        <img class="pop-up" src="https://img.uxwing.com/wp-content/themes/uxwing/download/web-app-development/popup-link-icon.svg" alt="popup"/>    
+    </button>
+    </span>    
+    </div>
+
+     <!-- <div class="left_panel">
+        <div *ngIf="isExcel">
+           <app-display-excel></app-display-excel>
+       </div>
+       
+       <div *ngIf="isPdf">
+           <app-display-pdf></app-display-pdf>
+       </div> 
+       </div>   -->
+    <!-- <div class="sent-message">
+
+        <span class="sent">Hi This is preethi</span>
+        <i class="bi-person person"></i>
+    </div>
+    <div class="receive-message">
+        <i class="bi bi-robot robo"></i>
+        <span class="receive">Hi Preethi How may I help you </span>
+    </div>
+    <div class="sent-message">
+
+        <span class="sent">Hi This is preethi</span>
+        <i class="bi-person person"></i>
+    </div>
+    <div class="receive-message">
+        <i class="bi bi-robot robo"></i>
+        <span class="receive">Hi Preethi How may I help you </span>
+    </div> -->
+     <!-- <div class="leftpanel">
+        <div *ngIf="isexcel">
+            <app-display-excel></app-display-excel>
+        </div>
+        
+        <div *ngIf="ispdf">
+            <app-display-pdf></app-display-pdf>
+        </div>
+        </div>  -->
+    <!-- <div class="second-comp"> -->
+    <div class="response-message">
+        <div class="d-flex flex-row justify-content-center">
+            <span *ngIf="loading" >Uploading...</span>
+            <span *ngIf="!loading"></span>
+        </div>
+        </div>
+    
+    
+        <div class="response-message d-flex flex-row justify-content-center">
+            <p>{{response_message}}</p>
+        </div>
+        
+        
+    <div class="main-container">
+        <div *ngFor="let item of messages">
+          <div [ngClass]="{'sent-message': item.isUserMessage, 'receive-message': !item.isUserMessage}">
+            <i *ngIf="!item.isUserMessage" class="bi bi-robot robo"></i>
+            <span [ngClass]="{'sent': item.isUserMessage, 'receive': !item.isUserMessage}">{{item.reply}}</span>
+            <i *ngIf="item.isUserMessage" class="bi-person person"></i>
+             
+          </div>
+        </div>   
+        <span *ngIf="isLoading" class="loading-dots">{{ loadingDots }}</span>
+    </div>
+
+    <div class="inp-cont">
+        <input class="input-msg" placeholder="Type Something..." [(ngModel)]="newMessage" (keyup.enter)="sendMessage()">
+        <!-- <span class="sendAttach"> -->
+        <!-- <i class="bi bi-send-fill icon-size send "></i> -->
+        <button (click)="sendMessage()" class="send-button"  [disabled]="isWaitingForResponse">
+            <i class="bi bi-send-fill icon-size send"></i>
+        </button>
+
+        <div class="file-input">
+            <!-- <label for="file1" class="file-label"> -->
+                <i class="bi bi-paperclip icon-size"></i>
+            <!-- </label> -->
+            <input type="file" id="file1" name="file1" class="file-input"/>
+          </div>
+        <!-- </span> -->
+        
+    
+    </div>
+ <!-- </div> -->
+  <!-- </div> -->

@@ -1,0 +1,77 @@
+.bgviolet{
+
+    background-image: linear-gradient(to right, rgb(192, 161, 192),rgb(235, 217, 235));
+
+       height: 100vh;
+
+       /* background-size: cover; */
+
+       padding: 20px;
+       margin-top: 10px;
+
+}
+
+
+
+
+.leftRightCont{
+
+display: flex;
+
+flex-direction: row;
+
+justify-content: center;
+
+/* align-items: flex-start; */
+
+align-items:center;
+
+background-color: white;
+
+border-radius: 30px;
+
+padding: 5px;
+
+}
+
+
+
+
+.left{
+
+    margin: 5px;
+
+    width: 30%;
+
+    height: 100vh;
+
+    border-style: solid;
+
+    border-width: 10px;
+
+    border-radius: 20px;
+
+    border-color: rgb(245, 239, 239);
+
+    align-self:flex-end
+
+   
+
+}
+
+
+
+
+.right{
+    position: relative;
+
+    background-color: rgb(245, 239, 239);
+
+    width: 70%;
+
+    height: 100vh;
+
+    border-radius: 20px;
+
+
+}

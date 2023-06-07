@@ -1,0 +1,302 @@
+* {
+    font-family: 'Fredoka', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    /* box-sizing: border-box; */
+}
+
+html,
+body {
+    overflow-x: hidden;
+    height: 100vh !important;
+}
+
+.chatbot-heading{
+    color: rgb(202, 167, 202);
+    font-family: 'Fredoka', sans-serif;
+    padding:10px;
+    font-size:x-large;
+    font-weight: bold;
+}
+.box-2 {
+    background: url(../../assets/images/bg-login.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.carousel-caption {
+    bottom: 6.25rem !important;
+}
+
+.carousel-indicators {
+    margin-bottom: 6rem !important;
+}
+
+.box-3 {
+    /* width: 100% !important;
+    height: 87vh !important; */
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height:87vh;;
+    width:100%;
+}
+
+.card-login {
+    /* background: transparent !important; */
+    background-color: #FFFFFF;
+    padding: 30px;
+}
+
+.carousel-head {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 31px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.carousel-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 7px !important;
+    height: 7px !important;
+    border-radius: 50%;
+}
+
+
+.heading-login {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0.02em;
+    color: #080828;
+}
+
+.text-login {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: rgb(202, 167, 202);
+}
+
+.label-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px !important;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #42425E !important;
+}
+
+.form-control-text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px !important;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    color:rgb(202, 167, 202) ;
+    padding: 12px !important;
+    box-shadow: none !important;
+    border-color: #9292B8 !important;
+
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column-reverse !important;
+}
+
+input[type=text]:focus {
+    border: 1px solid #6C5CE7 !important;
+    color:rgb(202, 167, 202)!important;
+    width:100vw;
+}
+
+input[type=password]:focus {
+    border: 1px solid #6C5CE7 !important;
+}
+
+.form-group input:focus+label {
+    color:rgb(202, 167, 202) !important;
+}
+
+.checkbox {
+    width: 12px;
+}
+
+input[type="checkbox"] {
+    accent-color: rgb(202, 167, 202);
+}
+
+.control--checkbox {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: right;
+    color: #080828;
+
+}
+
+.forgot-pass {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: right;
+    color: #E84393;
+    text-decoration: none !important;
+}
+
+.forgot-pass:hover {
+    color: #E84393 !important;
+}
+.overhight {
+    overflow: hidden;
+    height: 100vh;
+}
+.btn-sign {
+    background-color:  rgb(202, 167, 202);
+    border: 1px solid rgb(245, 239, 239);
+    border-radius: 6px !important;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF !important;
+    width: 100%;
+    padding: 12px !important;
+}
+
+.footer .p-color {
+    color: rgb(202, 167, 202);
+    text-decoration: none !important;
+    font-weight: 500;
+}
+
+.footer.text-muted {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #9292B8;
+}
+
+@media (max-width: 1400px) {
+
+    .logo {
+        width: 20%;
+    }
+
+    .carousel-head {
+        font-size: 18px !important;
+    }
+
+    .carousel-text {
+        font-size: 14px !important;
+    }
+
+    .heading-login {
+        font-size: 20px !important;
+    }
+
+    .carousel-caption {
+        bottom: 4.25rem !important;
+    }
+
+    .carousel-indicators {
+        margin-bottom: 3rem !important;
+    }
+
+    .text-login {
+        font-size: 13px;
+    }
+
+    .label-text {
+        font-size: 13px !important;
+    }
+
+    .form-control-text {
+        font-size: 13px !important;
+
+    }
+
+    .checkbox {
+        width: 11px;
+    }
+
+    .control--checkbox {
+        font-size: 13px;
+
+    }
+
+    .forgot-pass {
+        font-size: 13px;
+    }
+
+    .btn-sign {
+        font-size: 14px;
+    }
+
+    .footer .p-color {
+        color: #6C5CE7;
+        font-weight: 500;
+    }
+
+    .footer.text-muted {
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .logo {
+        width: 15%;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .logo {
+        width: 17%;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .logo {
+        width: 25%;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .logo {
+        width: 35%;
+        margin-left: 10px;
+    }
+}
+@media (max-width: 280px) {
+    .alignment{
+        display: flex;
+        flex-direction: column;
+    }
+}

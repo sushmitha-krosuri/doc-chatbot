@@ -1,0 +1,310 @@
+.file-input {
+    position: relative;
+    display: inline-block;
+  }
+
+
+  .file-label {
+    display: inline-block;
+    /* padding: 8px 12px; */
+    background-color: #f1f1f1;
+    color: #555555;
+    border-radius: 4px;
+    /* border: 1px solid #dddddd; */
+    cursor: pointer;
+  }
+
+  .file-input input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .pop-button{
+    border:none;
+    background-color: transparent;
+    align-self:flex-start;
+  }
+  
+.pop-up{
+    width: 15px;
+    height: 15px;
+
+}
+.cont3{
+    position: relative;
+}
+
+
+.file-input {
+    position: relative;
+    display: inline-block;
+  }
+
+  .file-label {
+    border: none;
+    display: inline-block;
+    padding: 8px 12px;
+    /* background-color: #f1f1f1; */
+    background-color: white;
+    color: #555555;
+    border-radius: 4px;
+    /* border: 1px solid #dddddd; */
+    cursor: pointer;
+  }
+
+  .file-input input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+
+
+.hide-choose-file-button::-webkit-file-upload-button {
+    display: none;
+  }
+  .folder{
+    background-color: rgb(245, 239, 239);
+    font-size: 25px;
+    padding-left: 15px;
+  }
+  .browseFile{
+    display: flex;
+    padding-left: 20px;
+  }
+  .hide-choose-file-button::before {
+    content: 'Browse File';
+    display: inline-block;
+    background-color: rgb(245, 239, 239);;
+    color: black;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right:20px ;
+  }
+  
+  .hide-choose-file-button::before:hover {
+    background: #0056b3;
+  }
+  
+
+.file-container{
+    border: 1px solid rgb(245, 239, 239);
+    padding :5px;
+    text-align: center;
+    padding: 15px;
+}
+.inputEle{
+    display: none;
+}
+
+.sent-message{
+    text-align: right;
+}
+
+.pop-up{
+    width: 15px;
+    height: 15px;
+}
+
+.sent{
+    background-color: rgb(161, 129, 161);
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    padding:10px;
+    box-shadow: 5px 5px 5px lightgrey;
+    margin-right: 10px;
+}
+
+.receive{
+    background-color: white;
+    border-radius: 5px;
+    border-bottom-left-radius: 0px;
+    padding:10px;
+    box-shadow: 5px 5px 5px lightgrey;
+    margin-left: 10px;
+
+}
+
+#message-input{
+    width: 70%;
+    height: 200px;
+    padding: 10px;
+}
+
+.inp-cont{
+    margin-bottom:20px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:95%;
+    height: 50px;
+    border-radius: 10px;
+    /* margin-top: 40px; */
+    position: absolute;
+    bottom: 0;
+    align-items: center;
+    background-color: white;
+    margin-left: 10px;
+}
+
+.uploadbtn{
+border: none;
+background-color: transparent;
+}
+
+.upload{
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.browse-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color:white ;
+    margin:10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.main-container{
+    /* height: 400px; */
+    height: 70%;
+    overflow: auto;
+    margin-bottom: 20px;
+}
+
+.browse{
+    background-color: rgb(245, 239, 239);
+    padding: 10px;
+    border-radius: 3px;
+    margin-right: 20px;
+}
+
+.file{
+   color:  rgb(161, 129, 161);
+}
+.text-center{
+    color:brown;
+}
+
+.input-msg{
+    border: none;
+    box-shadow: 5px 5px 5px lightgrey;
+    width: 87%;
+    height: 50px;
+    outline: none;    
+}
+
+.send-button{
+border: none;
+background-color: white;
+}
+/* .send{
+    background-color: white;
+    font-size: 70%;
+    height: 45px;
+    padding-top: 8px;
+    box-shadow: 5px 5px 5px lightgrey;
+    padding-right: 10px;
+} */
+
+.icon-size{
+font-size: 30px;
+padding: 5px;
+margin: 5px;
+}
+
+.sendAttach{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+
+
+.file-container{
+    border: 1px solid rgb(245, 239, 239);
+    padding :5px;
+    text-align: center;
+}
+
+.sent-message{
+    text-align: right;
+    color: white;
+}
+
+.sent{
+    background-color:  rgb(202, 167, 202);
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    padding:10px;
+}
+
+.robo{
+    font-size:30px ;
+}
+.person{
+    padding-top:10px;
+    color:black;
+    font-size:30px;
+}
+
+
+.receive-message{
+    border-radius: 5px;
+    border-bottom-left-radius: 0px;
+    padding:10px;
+    display: flex;
+    align-items: center;
+}
+
+#message-input{
+    width: 200px;
+    padding: 10px;
+    margin: 5px;
+    border: 0px;
+}
+
+/* .container{
+    background-color: rgb(245, 239, 239);
+    width: 100%;
+    border-radius: 10px;
+    height: 100vh;
+} */
+
+.loading-dots {
+    margin:30px;
+    font-size:30px;
+  }
+  
+.first-half{
+        height:400px;
+        width:350px;
+        border:10px solid  #9A9AEB ;
+        margin:20px;
+        padding:20px;
+        border-radius: 40px;
+        box-shadow: inset;
+        background-color: #E6E6FA;
+        overflow:auto;
+}
+  
+.left_panel{
+    overflow:auto;
+    height:900px;
+    width:350px;
+    
+}
+.second-comp{
+    margin-left:360px;
+}

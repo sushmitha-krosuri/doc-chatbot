@@ -1,0 +1,32 @@
+.header-cont{
+    display :flex;
+    justify-content:space-between;
+}
+
+.logo{
+    color:rgb(141, 103, 141);;
+    font-size: 30px;
+}
+
+.user-circle{
+    background-color: rgb(141, 103, 141);;
+    width:40px;
+    height:40px;
+    border-radius: 20px;
+}
+.cont{
+    display: flex;
+}
+
+.robo{
+    font-size: 30px;
+    color: rgb(141, 103, 141);;;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+.user{
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 5px;
+    padding-left: 10px;
+}

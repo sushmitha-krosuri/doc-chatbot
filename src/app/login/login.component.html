@@ -1,0 +1,112 @@
+<!-- <div class="overhight"> -->
+  <div>
+    <div class="row justify-content-between">
+    
+    
+      <!-- <div class="col-xl-6 d-xl-block d-none p-0">
+        <div class="box-1 mt-md-0 mt-5 p-0">
+    
+    
+          <div id="carouselExampleDark" class="carousel slide h-100" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./assets/images/bg-left-1.svg" class="d-block w-100 h-100 img-fluid" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="carousel-head">Sacral.AI</h5>
+                  <p class="carousel-text">Generative AI for Automation</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="assets/images/bg-left-2.svg" class="d-block w-100 img-fluid" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="carousel-head">Sacral.AI</h5>
+                  <p class="carousel-text">Generative AI for Automation</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/bg-left-3.svg" class="d-block w-100 img-fluid" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="carousel-head">Sacral.AI</h5>
+                  <p class="carousel-text">Generative AI for Automation</p>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+    
+        </div>
+    
+      </div> -->
+    
+      <div class="col-xl-12 p-0 ">
+        <div class="box-2 m-0">
+    
+          <!-- <img class="img-fluid logo" src="../../assets/logo/Logo_without_tagline.svg" alt=""> -->
+          <h1 class="chatbot-heading">DOC chatBot</h1>
+          <div class="box-3">
+    
+            <!-- <div class="card card-login col-xxl-5 col-xl-6 col-md-5 col-11 mx-auto border-0"> -->
+            <div class="card card-login mx-auto border-0  col-12 col-md-5 col-xl-6 col-xxl-4">
+              <div class="card-body p-4">
+                <p class="mb-1 heading-login text-center">Login</p>
+                <p class="text-muted text-login mb-2 text-center">Login to continue to our application</p>
+                <form id="loginForm" [formGroup]="loginForm" class="my-4">
+                  <div class="form-group first">
+                    <div
+                    *ngIf="loginForm.controls['userName'].invalid && (loginForm.controls['userName'].dirty|| loginForm.controls['userName'].touched)"
+                    class="col-sm-12 input-fields-wrapper text-red error-message">
+                    User Name required.
+                  </div>
+                    <input type="email" formControlName="userName" class="form-control form-control-text"
+                      placeholder="Enter Username" id="username">
+                    <label for="username" class="label-text mb-1">User Name</label>
+                    
+                  </div>
+                  <div class="form-group last mb-3 mt-3">
+                     <div
+                      *ngIf="loginForm.controls['password'].invalid && (loginForm.controls['password'].dirty|| loginForm.controls['password'].touched)"
+                      class="col-sm-12 input-fields-wrapper text-red error-message">
+                      Password required.
+                    </div>
+                    <input type="password" formControlName="password" class="form-control form-control-text"
+                      placeholder="Your Password" id="password">
+                    <label for="password" class="label-text mb-1">Password</label>
+                   
+                  </div>
+                  <div class="alignment d-flex my-4 align-items-center justify-content-between">
+                    <label class="control control--checkbox mb-0 align-items-center">
+                      <span class="caption align-self-end  justify-content-center d-flex"> <input type="checkbox"
+                          class="me-2 checkbox mb-0" checked="checked">Remember
+                        me</span>
+                    </label>
+    
+                    <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span>
+                  </div>
+                  <!-- <input type="submit" value="Sign In" class="btn btn-block btn-sign my-2"> -->
+                  <button class="btn btn-block btn-sign my-2" (click)="onSubmit()">Sign In</button>
+                </form>
+              </div>
+    
+              <div class="mt-auto text-center">
+                <p class="footer text-muted mb-0 mt-md-0 mt-4">Don’t have an account ?
+                  <span class="p-color me-1"><a href="#" class="p-color">Sign up</a>
+                  </span>
+                </p>
+              </div>
+            </div>
+            
+          </div>
+        
+        </div>
+    
+      </div>
+    </div>
+</div>

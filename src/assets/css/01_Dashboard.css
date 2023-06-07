@@ -1,0 +1,551 @@
+* {
+    font-family: 'Fredoka', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    background: url(../images/nav-img.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+html {
+    height: 100%;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.card-nav {
+    background: #F5F3FF !important;
+    border-radius: 20px 20px 0px 0px !important;
+    height: 750px !important;
+}
+
+.header {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 24px rgba(12, 5, 68, 0.4);
+    border-radius: 0px 0px 20px 20px !important;
+}
+
+.tab {
+
+    overflow-x: scroll !important;
+}
+
+.tab::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-bar-color);
+    border-radius: 20px;
+    border: 3px solid var(--scroll-bar-bg-color);
+}
+
+:root {
+    --code-bg-color: #fafafa;
+    --scroll-bar-color: #fafafa;
+    --scroll-bar-bg-color: #fafafa;
+}
+
+.tab::-webkit-scrollbar {
+    height: 1px;
+    width: 1px;
+}
+
+/* Dropdown button */
+
+.dropdown-toggle {
+    border: none !important;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.profile-box {
+    border: none !important;
+    width: 220px;
+    box-shadow: 0px 4px 16px 0px #08082826;
+    top: -60px !important;
+    border-radius: 10px !important;
+}
+
+.profile-name {
+    font-weight: 500;
+    font-size: 16px;
+    color: #080828;
+}
+
+.profile-name-1 {
+    font-weight: 500;
+    font-size: 16px;
+    color: #080828;
+}
+
+.profile-role {
+    font-weight: 400;
+    font-size: 14px;
+    color: #9292B8;
+}
+
+.profile-role-1 {
+    font-weight: 400;
+    font-size: 14px;
+    color: #9292B8;
+}
+
+
+
+
+.options {
+    display: flex !important;
+    justify-content: space-between;
+    box-shadow: 0px 3px 16px 0px #0B0B0B0F;
+    border: 1px solid #EEF5FF !important;
+    border-radius: 5px;
+    align-items: center;
+    padding: 10px 15px !important;
+}
+
+.options:hover {
+    background: #FFF8FB !important;
+    border-color: #E84393 !important;
+}
+
+.options:hover p {
+    color: #E84393 !important;
+
+}
+
+.options:hover .dropdown-img-1 {
+    content: url(../images/clock-1.svg);
+
+}
+
+.options:hover .dropdown-img-2 {
+    content: url(../images/logout-1.svg);
+
+}
+
+.options p {
+    font-weight: 400;
+    font-size: 15px;
+    color: #7B7B9E;
+}
+
+.options p:hover {
+    color: #E84393 !important;
+}
+
+
+
+
+/* Dropdown button end */
+
+
+.menu-active {
+    background: #FFFFFF;
+    box-shadow: inset 0px 0px 6px 3px rgba(9, 5, 41, 0.1);
+    border-radius: 5px;
+    position: relative;
+    width: 140px;
+    height: 38px;
+}
+
+.menu-unactive {
+    background: #7363E8;
+    /* box-shadow: inset 0px 0px 6px 3px rgba(9, 5, 41, 0.1); */
+    border-radius: 5px;
+    width: 140px;
+    height: 38px;
+}
+
+.active-text {
+    font-weight: 500 !important;
+    font-size: 15px !important;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #080828 !important;
+}
+
+.unactive-text {
+    font-weight: 400 !important;
+    font-size: 15px !important;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF !important;
+
+}
+
+.menu-active::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    width: 0;
+    height: 0;
+    border: 52px solid transparent;
+    border-top: 0;
+    border-bottom: 8px solid #E84393;
+    opacity: 0.25;
+}
+
+.main-header {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #080828;
+}
+
+.main-subtle {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #9292B8;
+}
+
+.card-text {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    color: #42425E;
+}
+
+.box-card {
+    background: #FFFFFF;
+    border: 1px solid #EEF5FF;
+    box-shadow: 0px 3px 16px rgba(11, 11, 11, 0.06) !important;
+    border-radius: 10px !important;
+    border: none !important;
+}
+
+.bread-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #7B7B9E;
+}
+
+.bread-link:hover {
+    color: #7363E8;
+}
+
+.active-bread {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    color: #E84393 !important;
+}
+
+.card-6 {
+    padding-right: 0px !important;
+}
+
+
+.box-card-1:hover {
+    background: #E0F0FF;
+}
+
+.box-card-1:hover img {
+    content: url(../images/Configure-swami-white.svg);
+}
+
+.box-card-2:hover {
+    background: #EBF3FD;
+}
+
+.box-card-2:hover img {
+    content: url(../images/code-swami-white.svg);
+}
+
+.box-card-3:hover {
+    background: #E4F8F5;
+}
+
+.box-card-3:hover img {
+    content: url(../images/word-swami-white.svg);
+}
+
+.box-card-4:hover {
+    background: #EBEBF6;
+}
+
+.box-card-4:hover img {
+    content: url(../images/test-swami-white.svg);
+}
+
+.box-card-5:hover {
+    background: #FFF8E3;
+}
+
+.box-card-5:hover img {
+    content: url(../images/word-recom-swami-white.svg);
+}
+
+.box-card-6:hover {
+    background: #EAEEFF;
+}
+
+.box-card-6:hover img {
+    content: url(../images/story-swami-white.svg);
+}
+
+.box-card-7:hover {
+    background: #FFEDDF;
+}
+
+.box-card-7:hover img {
+    content: url(../images/architect-swami-white.svg);
+}
+
+
+.box-card-8:hover {
+    background: #EBF8FF;
+}
+
+.box-card-8:hover img {
+    content: url(../images/devops-swami-white.svg);
+}
+
+.box-card-9:hover {
+    background: #EBF9FD;
+}
+
+.box-card-9:hover img {
+    content: url(../images/production-swami-white.svg);
+}
+
+.box-card-10:hover {
+    background: #FFF4E2;
+}
+
+.box-card-10:hover img {
+    content: url(../images/log-swami-white.svg);
+}
+
+
+
+
+
+.footer {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    color: #7B7B9E !important;
+}
+
+
+@media (max-width:1400px) {
+
+    .logo {
+        width: 12%;
+    }
+
+    .card-nav {
+        background: #F5F3FF !important;
+        border-radius: 20px 20px 0px 0px !important;
+        height: 650px !important;
+    }
+
+    .active-text,
+    .unactive-text {
+
+        font-size: 13px !important;
+
+    }
+
+    .menu-active {
+        width: 120px;
+    }
+
+    .menu-unactive {
+        width: 120px;
+    }
+
+    .main-header {
+
+        font-size: 16px;
+
+    }
+
+    .main-subtle {
+
+        font-size: 13px;
+
+    }
+
+    .card-text {
+
+        font-size: 13px;
+
+    }
+
+    .bread-link {
+
+        font-size: 13px;
+
+    }
+
+    .active-bread {
+
+        font-size: 14px;
+
+    }
+
+    .footer {
+
+        font-size: 12px;
+
+    }
+
+
+
+
+
+}
+
+@media (max-width:1199px) {
+
+
+    .logo {
+        width: 14%;
+    }
+
+    .card-nav {
+
+        height: auto !important;
+
+    }
+
+    .card-3 {
+        padding-right: 0px !important;
+    }
+
+    .card-10 {
+        padding-right: 0% !important;
+    }
+
+    .block-card {
+        display: none;
+    }
+
+
+
+}
+
+
+@media (max-width:991px) {
+    .card-2 {
+        padding-right: 0px !important;
+    }
+
+    .card-3 {
+        padding-right: 12px !important;
+    }
+
+    .card-4 {
+        padding-right: 0px !important;
+    }
+
+    .card-9 {
+        padding-right: 0px !important;
+    }
+
+    .card-10 {
+        padding-right: 12px !important;
+    }
+
+    .card-11 {
+        padding-right: 0px !important;
+    }
+}
+
+@media (max-width:991px) {
+
+
+    .logo {
+        width: 16%;
+    }
+}
+
+@media (max-width:768px) {
+
+
+    .logo {
+        width: 18%;
+    }
+
+    .profile-name {
+        display: none;
+    }
+
+    .profile-role {
+        display: none;
+    }
+
+
+
+
+}
+
+@media (max-width:575px) {
+
+
+    .logo {
+        width: 24%;
+    }
+
+    .profile-name {
+        display: none;
+    }
+
+    .card-1 {
+        padding-right: 0px !important;
+    }
+
+    .card-3 {
+        padding-right: 0px !important;
+    }
+
+    .card-5 {
+        padding-right: 0px !important;
+    }
+
+    .card-8 {
+        padding-right: 0px !important;
+    }
+
+    .card-10 {
+        padding-right: 0px !important;
+    }
+
+    .card-11 {
+        padding-right: 0px !important;
+    }
+
+}
+
+@media (max-width:375px) {
+
+
+    .logo {
+        width: 35%;
+    }
+
+    .profile-name {
+        display: none;
+    }
+
+
+
+
+}
