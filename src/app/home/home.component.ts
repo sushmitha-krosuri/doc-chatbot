@@ -7,11 +7,11 @@ import { DataTransferService } from '../services/data-transfer.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  isExcel:any
-  constructor(private dataService:DataTransferService){
-    this.isExcel=this.dataService.getFileData()
+  //isExcel:any
+  //constructor(private dataService:DataTransferService){
+    //this.isExcel=this.dataService.getFileData()
 
-  }
+  //}
 
 }
 

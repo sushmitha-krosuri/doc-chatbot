@@ -8,20 +8,19 @@
            <app-display-pdf></app-display-pdf>
        </div> 
        </div>  -->
-   
-
+   <div class="full-container">
+    
     <div class="browse-cont ">
-        <button (click)="uploadfile()" class="uploadbtn"><i class="bi bi-cloud-upload upload"></i></button>
+        <button  class="uploadbtn"><i class="bi bi-cloud-upload upload"></i></button>
         <span class="browseFile">
             <i class="bi bi-folder-plus folder"></i>
         <input type="file" id="file1" class="hide-choose-file-button text-secondary" (change)="getFile($event)"/>
         <button class="pop-button" (click)="openDialog()">
-        <img class="pop-up" src="https://img.uxwing.com/wp-content/themes/uxwing/download/web-app-development/popup-link-icon.svg" alt="popup"/>    
+        <img class="pop-up" src="https://img.uxwing.com/wp-content/themes/uxwing/download/web-app-development/popup-link-icon.svg" alt="popup"/>       
     </button>
     </span>    
     </div>
-
-     <!-- <div class="left_panel">
+  <!-- <div class="left_panel">
         <div *ngIf="isExcel">
            <app-display-excel></app-display-excel>
        </div>
@@ -29,7 +28,7 @@
        <div *ngIf="isPdf">
            <app-display-pdf></app-display-pdf>
        </div> 
-       </div>   -->
+       </div>    -->
     <!-- <div class="sent-message">
 
         <span class="sent">Hi This is preethi</span>
@@ -58,7 +57,8 @@
         </div>
         </div>  -->
     <!-- <div class="second-comp"> -->
-    <div class="response-message">
+        
+     <div class="response-message">
         <div class="d-flex flex-row justify-content-center">
             <span *ngIf="loading" >Uploading...</span>
             <span *ngIf="!loading"></span>
@@ -83,7 +83,7 @@
         <span *ngIf="isLoading" class="loading-dots">{{ loadingDots }}</span>
     </div>
 
-    <div class="inp-cont">
+    <div class="inp-cont ">
         <input class="input-msg" placeholder="Type Something..." [(ngModel)]="newMessage" (keyup.enter)="sendMessage()">
         <!-- <span class="sendAttach"> -->
         <!-- <i class="bi bi-send-fill icon-size send "></i> -->
@@ -91,15 +91,17 @@
             <i class="bi bi-send-fill icon-size send"></i>
         </button>
 
-        <div class="file-input">
-            <!-- <label for="file1" class="file-label"> -->
+         <!-- <div class="file-input">
+             <label for="file1" class="file-label">
                 <i class="bi bi-paperclip icon-size"></i>
-            <!-- </label> -->
+             </label> 
             <input type="file" id="file1" name="file1" class="file-input"/>
-          </div>
-        <!-- </span> -->
+          </div> -->
+    
         
     
     </div>
+    </div>
+
  <!-- </div> -->
   <!-- </div> -->

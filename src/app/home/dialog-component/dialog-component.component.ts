@@ -1,5 +1,5 @@
-import { Component, Inject, Input } from '@angular/core';
-import { MAT_DIALOG_DATA, MatDialog } from '@angular/material/dialog';
+import { Component, EventEmitter, Inject, Input, Output } from '@angular/core';
+import { MAT_DIALOG_DATA, MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { DataTransferService } from 'src/app/services/data-transfer.service';
 
 
@@ -9,13 +9,14 @@ import { DataTransferService } from 'src/app/services/data-transfer.service';
   styleUrls: ['./dialog-component.component.css']
 })
 export class DialogComponentComponent {
- 
+  
+
 isExcel:boolean;
 ispdf:boolean;
 // @Inject(MAT_DIALOG_DATA)
 // public data: any,
   // fileData:any;
-  constructor(private dataService:DataTransferService) {
+  constructor(private dataService:DataTransferService, public dialogRef: MatDialogRef<DialogComponentComponent>) {
     // console.log('Received Data:', data);
     // this.fileData = data.content;
     this.isExcel=this.dataService.getFileData()
@@ -24,5 +25,13 @@ ispdf:boolean;
 
 
   }
+
+  closeDialog() {
+    this.dialogRef.close();
+  }
+
+ 
+  
+
    
  }

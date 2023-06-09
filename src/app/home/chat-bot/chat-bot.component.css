@@ -4,7 +4,7 @@
   }
 
 
-  .file-label {
+.file-label {
     display: inline-block;
     /* padding: 8px 12px; */
     background-color: #f1f1f1;
@@ -43,7 +43,7 @@
     display: inline-block;
   }
 
-  .file-label {
+.file-label {
     border: none;
     display: inline-block;
     padding: 8px 12px;
@@ -142,7 +142,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width:95%;
+     width:80%;  
     height: 50px;
     border-radius: 10px;
     /* margin-top: 40px; */
@@ -150,7 +150,9 @@
     bottom: 0;
     align-items: center;
     background-color: white;
-    margin-left: 10px;
+    margin-left: 40px;
+    padding-left: 30px;
+
 }
 
 .uploadbtn{
@@ -169,14 +171,14 @@ background-color: transparent;
     justify-content: space-between;
     align-items: center;
     background-color:white ;
-    margin:10px;
+    margin:40px;
     padding: 10px;
     border-radius: 10px;
 }
 
 .main-container{
     /* height: 400px; */
-    height: 70%;
+    height: 60%;
     overflow: auto;
     margin-bottom: 20px;
 }
@@ -197,7 +199,7 @@ background-color: transparent;
 
 .input-msg{
     border: none;
-    box-shadow: 5px 5px 5px lightgrey;
+    /* box-shadow: 5px 5px 5px lightgrey; */
     width: 87%;
     height: 50px;
     outline: none;    
@@ -205,7 +207,9 @@ background-color: transparent;
 
 .send-button{
 border: none;
-background-color: white;
+border-radius:20px
+/* background-color: white;
+margin-right:10px; */
 }
 /* .send{
     background-color: white;

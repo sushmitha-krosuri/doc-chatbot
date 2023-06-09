@@ -1,8 +1,8 @@
 .bgviolet{
 
-    background-image: linear-gradient(to right, rgb(192, 161, 192),rgb(235, 217, 235));
+    background-image: linear-gradient(to right, #C3B5FF,rgb(235, 217, 235));
 
-       height: 100vh;
+       height: 90vh;
 
        /* background-size: cover; */
 
@@ -65,11 +65,12 @@ padding: 5px;
 .right{
     position: relative;
 
-    background-color: rgb(245, 239, 239);
+    /* background-color: rgb(245, 239, 239); */
+    background-color:#C3B5FF;
 
     width: 70%;
 
-    height: 100vh;
+    height: 80vh;
 
     border-radius: 20px;
 

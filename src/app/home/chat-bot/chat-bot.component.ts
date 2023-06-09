@@ -32,7 +32,7 @@ export class ChatBotComponent {
   messages:Message[] = [];
   newMessage:string = "";
   replyMsg:any;
-  api = 'http://34.131.89.161:8081/Get_prompt_response';
+  api = 'http://34.131.9.30:8081/Get_prompt_response';
   replyStyling:boolean = false;
   isWaitingForResponse: boolean = false;
   response_data:any;
@@ -52,7 +52,7 @@ export class ChatBotComponent {
 
   const dialogRef = this.dialogRef.open(DialogComponentComponent, {
     
-    // width: '400px',
+     width: '800px',
     
     //        data:{ content: this.fileContent }
     
@@ -75,10 +75,10 @@ export class ChatBotComponent {
     this.cdr.detectChanges();
     this.file=event.target.files[0]
     this.name= this.file.name;
+    this.messages=[]
    this.isExcel=this.name.endsWith(".xlsx")
    this.isPdf=this.name.endsWith(".pdf")
    this.DataService.sendisPdf(this.isPdf)
-
    this.pdfSrc = URL.createObjectURL(this.file);
     this.DataService.sendsrc(this.pdfSrc)
    console.log(this.isExcel,"is excel in getFile method")
@@ -102,8 +102,9 @@ export class ChatBotComponent {
     }
     console.log(this.file)
     console.log(this.name)
+    this.uploadfile(this.file)
   }
-  uploadfile(){
+  uploadfile(file: File){
     if(this.file){
 
       this.loading=true
@@ -113,13 +114,19 @@ export class ChatBotComponent {
     formData.set("file_name",this.name);
     formData.set("file",this.file);
     // console.log(this.file);
-    this.http.post('http://34.131.89.161:8081/upload',formData).subscribe((response)=>{
+    this.http.post('http://34.131.9.30:8081/upload',formData).subscribe((response)=>{
       console.log(response);
       //alert("File uploaded successfully!");
+      if (response){
+      //debugger;
       this.response_data=response
-    
       this.response_message=this.response_data.message;
-      this.loading=false; 
+      this.loading=false
+      }else{
+        //debugger;
+        this.response_message = 'Unknown Error';
+      }
+        
       setTimeout(() => {
 
         // debugger

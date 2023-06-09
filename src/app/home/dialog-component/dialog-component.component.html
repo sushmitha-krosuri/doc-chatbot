@@ -1,9 +1,15 @@
-<div class="dialog-cont">
-<div *ngIf="isExcel">
-    <app-display-excel></app-display-excel>
-</div>
+<div class="dialog-header">
+    <button class="close-button" (click)="closeDialog()"><i class="bi bi-x-circle-fill"></i></button>
+  </div>
+  
 
-<div *ngIf="ispdf">
-    <app-display-pdf></app-display-pdf>
-</div>
+
+<div class="dialog-cont">
+  <div *ngIf="isExcel">
+      <app-display-excel ></app-display-excel>
+  </div>
+
+  <div *ngIf="ispdf">
+     <app-display-pdf ></app-display-pdf> 
+    </div>
 </div>
