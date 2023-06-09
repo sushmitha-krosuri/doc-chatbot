@@ -9,7 +9,17 @@
        </div> 
        </div>  -->
    <div class="full-container">
-    
+
+     <div class="left-panel">
+        <div *ngIf="isExcel">
+           <app-display-excel></app-display-excel>
+       </div>
+       
+       <div *ngIf="isPdf">
+           <app-display-pdf></app-display-pdf>
+       </div> 
+    </div>  
+    <div class="right-panel">
     <div class="browse-cont ">
         <button  class="uploadbtn"><i class="bi bi-cloud-upload upload"></i></button>
         <span class="browseFile">
@@ -20,7 +30,7 @@
     </button>
     </span>    
     </div>
-  <!-- <div class="left_panel">
+ <!-- <div class="left_panel">
         <div *ngIf="isExcel">
            <app-display-excel></app-display-excel>
        </div>
@@ -28,7 +38,7 @@
        <div *ngIf="isPdf">
            <app-display-pdf></app-display-pdf>
        </div> 
-       </div>    -->
+       </div>     -->
     <!-- <div class="sent-message">
 
         <span class="sent">Hi This is preethi</span>
@@ -63,15 +73,15 @@
             <span *ngIf="loading" >Uploading...</span>
             <span *ngIf="!loading"></span>
         </div>
-        </div>
+    </div>
     
     
-        <div class="response-message d-flex flex-row justify-content-center">
+    <div class="response-message d-flex flex-row justify-content-center">
             <p>{{response_message}}</p>
-        </div>
+    </div>
         
         
-    <div class="main-container">
+    <div class="main-container ">
         <div *ngFor="let item of messages">
           <div [ngClass]="{'sent-message': item.isUserMessage, 'receive-message': !item.isUserMessage}">
             <i *ngIf="!item.isUserMessage" class="bi bi-robot robo"></i>
@@ -102,6 +112,17 @@
     
     </div>
     </div>
+</div>
+
+     <!-- <div class="left_panel">
+        <div *ngIf="isExcel">
+           <app-display-excel></app-display-excel>
+       </div>
+       
+       <div *ngIf="isPdf">
+           <app-display-pdf></app-display-pdf>
+       </div> 
+       </div>   -->
 
  <!-- </div> -->
   <!-- </div> -->

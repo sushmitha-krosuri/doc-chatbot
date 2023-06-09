@@ -142,7 +142,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-     width:80%;  
+     width:50%;  
     height: 50px;
     border-radius: 10px;
     /* margin-top: 40px; */
@@ -171,17 +171,28 @@ background-color: transparent;
     justify-content: space-between;
     align-items: center;
     background-color:white ;
-    margin:40px;
+    margin-left:40px;
+    margin-right:40px;
+    margin:30px;
     padding: 10px;
     border-radius: 10px;
 }
 
-.main-container{
+.main-container {
+
     /* height: 400px; */
-    height: 60%;
-    overflow: auto;
+    height: 200px;
+    overflow-y: auto;
     margin-bottom: 20px;
+    
 }
+/* .main-container::-webkit-scrollbar {
+    width:10px;
+    background-color: #888; 
+    border-radius: 5px;
+    padding:10px;
+    height:40px;
+}   */
 
 .browse{
     background-color: rgb(245, 239, 239);
@@ -305,10 +316,64 @@ margin: 5px;
   
 .left_panel{
     overflow:auto;
-    height:900px;
-    width:350px;
+    
+    width:30vw;
+    border-color: #0056b3;
     
 }
 .second-comp{
     margin-left:360px;
 }
+
+.total-container{
+    background-color: black;
+    border-radius: 40px;
+   }
+/* For Webkit browsers (Chrome, Safari) */
+
+
+/* Webkit-based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 7px; /* Width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color of the scrollbar track */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar thumb */
+    border-radius: 5px; /* Border radius of the scrollbar thumb */
+  }
+  
+  /* Firefox */
+  /* Note: Firefox only supports scrollbar styling for 'html' element */
+  html {
+    scrollbar-width: thin; /* Width of the scrollbar */
+  }
+  
+  html::-moz-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+  }
+  
+  html::-moz-scrollbar-track {
+    background-color: #f1f1f1; /* Color of the scrollbar track */
+  }
+  
+  html::-moz-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar thumb */
+    border-radius: 5px; /* Border radius of the scrollbar thumb */
+  }
+
+
+.left-panel{
+  height:400px;
+  width:350px;
+  border:10px solid  #9A9AEB ;
+  
+  padding:20px;
+  border-radius: 40px;
+  box-shadow: inset;
+  background-color: #E6E6FA;
+}
+ 
